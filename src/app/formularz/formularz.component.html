@@ -1,0 +1,50 @@
+<form #formularz="ngForm">
+
+<div class="formularz">
+    <h1>Zamówienie</h1>
+    <label >
+        <span>Imię i nazwisko: </span>
+        <input type="text" class="wpis" id="imieinazwisko" [(ngModel)]="imieinazwisko" name="imieinazwisko">
+    </label>
+
+
+    <label >
+        <span>Email: </span>
+        <input type="text" class="wpis" id="email" [(ngModel)]="email" name="email">
+    </label>
+
+
+    <label >
+        <span>Imię i nazwisko: </span>
+        <input type="text" class="wpis" id="email" [(ngModel)]="email" name="email">
+    </label>
+
+    <label >
+        <span>Produkt: </span>
+        <select name="produkt" id="produkt" class="produkt" [(ngModel)]="produkt" >
+
+            <option value="pralka">pralka</option>
+            <option value="telewizor">telewizor</option>
+            <option value="lodowka">lodowka</option>
+            <option value="laptop">laptop</option>
+
+
+        </select>
+    </label>
+    <label>
+        <span>Ilość:</span>
+        <input type="number" name="ilosc" class="wpis" id="ilosc" [(ngModel)]="ilosc">
+    </label>
+    <label>
+        <span>Wiadomość:</span>
+        <textarea name="wiadomosc" id="wiadomosc" class="wiadomosc" [(ngModel)]="wiadomosc"></textarea>
+        <button type="submit" class="przycisk" (click)="onSubmit()">Zamów</button>
+    </label>
+
+
+
+
+</div>
+
+
+</form>
